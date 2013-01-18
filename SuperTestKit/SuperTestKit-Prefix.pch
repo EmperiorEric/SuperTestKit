@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'SuperTestKit' target in the 'SuperTestKit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+
+    #import "TestKit.h"
+    #import "TestBKit.h"
+#endif
