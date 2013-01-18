@@ -16,6 +16,23 @@
 		14D741C916A997A300C37DFD /* SuperWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = 1458840216A9949B00B01E5C /* SuperWidget.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1400978916A9AA910082CF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1400977C16A9AA910082CF65 /* TestBKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1458836916A992D400B01E5C;
+			remoteInfo = TestBKit;
+		};
+		1400978C16A9AA910082CF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1400977F16A9AA910082CF65 /* TestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1458834D16A992BE00B01E5C;
+			remoteInfo = TestKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		1458838316A992E300B01E5C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -30,6 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1400977C16A9AA910082CF65 /* TestBKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestBKit.xcodeproj; path = TestBKit/TestBKit.xcodeproj; sourceTree = "<group>"; };
+		1400977F16A9AA910082CF65 /* TestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestKit.xcodeproj; path = TestKit/TestKit.xcodeproj; sourceTree = "<group>"; };
 		1458838516A992E300B01E5C /* libSuperTestKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSuperTestKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1458838816A992E300B01E5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1458838C16A992E300B01E5C /* SuperTestKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperTestKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -54,6 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1400977D16A9AA910082CF65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1400978A16A9AA910082CF65 /* libTestBKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1400978016A9AA910082CF65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1400978D16A9AA910082CF65 /* libTestKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1458837A16A992E300B01E5C = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +111,8 @@
 			children = (
 				1458839816A992F300B01E5C /* libTestKit.a */,
 				1458839616A992F000B01E5C /* libTestBKit.a */,
+				1400977C16A9AA910082CF65 /* TestBKit.xcodeproj */,
+				1400977F16A9AA910082CF65 /* TestKit.xcodeproj */,
 				1458838816A992E300B01E5C /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -152,12 +189,39 @@
 			mainGroup = 1458837A16A992E300B01E5C;
 			productRefGroup = 1458838616A992E300B01E5C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1400977D16A9AA910082CF65 /* Products */;
+					ProjectRef = 1400977C16A9AA910082CF65 /* TestBKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 1400978016A9AA910082CF65 /* Products */;
+					ProjectRef = 1400977F16A9AA910082CF65 /* TestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1458838416A992E300B01E5C /* SuperTestKit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1400978A16A9AA910082CF65 /* libTestBKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestBKit.a;
+			remoteRef = 1400978916A9AA910082CF65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1400978D16A9AA910082CF65 /* libTestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestKit.a;
+			remoteRef = 1400978C16A9AA910082CF65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1458838116A992E300B01E5C /* Sources */ = {
