@@ -1,3 +1,6 @@
 [submodule "TestBKit"]
 	path = TestBKit
 	url = https://github.com/EmperiorEric/TestBKit.git
+[submodule "TestKit"]
+	path = TestKit
+	url = https://github.com/EmperiorEric/TestKit.git
